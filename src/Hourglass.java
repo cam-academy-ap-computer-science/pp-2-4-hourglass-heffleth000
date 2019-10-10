@@ -13,7 +13,7 @@
 */
 
 public class Hourglass {
-	public static final int HEIGHT =
+
 	
 	public static void main(String[] args) {
 		fullLine();
@@ -34,13 +34,34 @@ public class Hourglass {
 	
 	//will make the top half of the hourglass
 	public static void top() {
-		for (int y = 1; y <= 4; x++) {
+		for (int y = 1; y <= 4; y++) {
 			for (int space = 1; space <= y; space++) {		//creating spaces inside
 				System.out.print(" ");
 			}
-			for (int dots = 1; dots <= ) {	//creating slashes and dots inside
-				
+			System.out.print("\\");
+			for (int dots = 10 - (2 * y); dots >=1; dots--) {	//creating dots inside
+				System.out.print(":");
 			}
+			System.out.println("/");
+		}
+	}
+	
+	//will make lines in middle
+	public static void middle() {
+		System.out.println("     ||");
+	}
+	
+	//will make bottom half of hourglass
+	public static void bottom() {
+		for (int b = 4; b >= 1; b--) {
+			for (int space = 1; space >= b; space++) {
+				System.out.print(" ");
+			}
+			System.out.print("/");
+			for (int dots = 10 - (2 * b); dots >= 1; dots++) {
+				System.out.print(":");
+			}
+			System.out.println("\\");
 		}
 	}
 }
