@@ -20,16 +20,16 @@ public class Hourglass {
 		top();
 		middle();
 		bottom();
-		fullLine();
+		fullLine(); 
 	}
 	
 	//will make both the top and bottom lines
 	public static void fullLine() {
-		System.out.print("+");
+		System.out.print("|");
 		for(int x = 1; x <= 10; x++) {
 			System.out.print("\"");
 		}
-		System.out.println("+");
+		System.out.println("|");
 	}
 	
 	//will make the top half of the hourglass
@@ -52,13 +52,13 @@ public class Hourglass {
 	}
 	
 	//will make bottom half of hourglass
-	public static void bottom() {
+	public static void bottom() {									
 		for (int b = 4; b >= 1; b--) {
-			for (int space = 1; space >= b; space++) {
+			for (int space = 1; space <= b; space++) {
 				System.out.print(" ");
 			}
-			System.out.print("/");
-			for (int dots = 10 - (2 * b); dots >= 1; dots++) {
+			System.out.print("/");									
+			for (int dots = 10 - (2 * b); dots >= 1; dots--) {
 				System.out.print(":");
 			}
 			System.out.println("\\");
