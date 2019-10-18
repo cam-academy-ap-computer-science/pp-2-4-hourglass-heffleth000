@@ -1,3 +1,16 @@
+/***** 
+ * Grading Comments:   27/25 pts
+ * Excellent Job.  I like your pseudocode.
+ * Your program is as clean, readable and efficient as it could possibly be.
+ * Correct Output 10/10
+ * Proper Use of Static Methods 3/3
+ * Proper Use of for loops 3/3
+ * Pseudocode 3/3
+ * Comments 2/2
+ * Consistent Layout and Style 2/2   
+ * Proper Use of Class Constant 2/2    
+ * Resizing extra credit: 2/2
+ */ 
 /*  Declare a constant that will 
 	Top/bottom line
 		print a line with | and "
